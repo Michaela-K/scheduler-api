@@ -33,6 +33,7 @@ module.exports = (db, updateAppointment) => {
     }
 
     const { student, interviewer } = request.body.interview;
+    console.log("Scheduler-api Interviewer", interviewer);
 
     db.query(
       `
